@@ -1,4 +1,4 @@
-/* Reset some basic elements */
+/* Reset basic elements */
 body, h1, h2, h3, p, ul, li, input, button {
     margin: 0;
     padding: 0;
@@ -7,8 +7,8 @@ body, h1, h2, h3, p, ul, li, input, button {
 
 /* Global styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
 }
@@ -24,13 +24,13 @@ body {
 }
 
 h1 {
-    color: #1f7cbb;
+    color: #0073e6;
     margin-bottom: 20px;
     font-size: 2.5em;
 }
 
 button {
-    background-color: #1f7cbb;
+    background-color: #0073e6;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-    background-color: #145a8a;
+    background-color: #005bb5;
 }
 
 label {
@@ -64,7 +64,7 @@ input {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
-    color: #1f7cbb;
+    color: #0073e6;
 }
 
 .back-button {
@@ -72,10 +72,10 @@ input {
     margin-top: 20px;
     font-size: 16px;
     text-decoration: none;
-    color: #1f7cbb;
+    color: #0073e6;
     transition: color 0.3s ease;
 }
 
 .back-button:hover {
-    color: #145a8a;
+    color: #005bb5;
 }
