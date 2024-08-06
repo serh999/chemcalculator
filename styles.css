@@ -1,59 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset basic elements */
+body, h1, h2, h3, p, ul, li, input, button {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+/* Global styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e9ecef; /* Ніжний сірий фон */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Білий фон для контенту */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 0.5rem;
-}
-
-input {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 3px;
+h1 {
+    color: #0073e6;
+    margin-bottom: 20px;
+    font-size: 2.5em;
 }
 
 button {
-    padding: 0.5rem;
-    background-color: #5cb85c;
+    background-color: #0073e6;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 10px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #005bb5;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 #result {
-    margin-top: 1rem;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0073e6;
 }
 
-#balanced-equation {
-    font-weight: bold;
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #0073e6;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #005bb5;
 }
