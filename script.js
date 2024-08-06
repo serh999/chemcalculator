@@ -72,7 +72,7 @@ function calculateMolecularWeight() {
         }
     }
 
-    document.getElementById("result").innerText = `Молекулярна маса: ${totalWeight.toFixed(2)}`;
+    document.getElementById("result").innerText = `Молекулярна маса: ${totalWeight.toFixed(2)} г/моль`;
 }
 
 function calculateMassPercentage() {
@@ -99,7 +99,7 @@ function calculateMassPercentage() {
         }
     }
 
-    let output = `Молекулярна маса: ${totalWeight.toFixed(2)}<br>Масові частки:<br>`;
+    let output = `Молекулярна маса: ${totalWeight.toFixed(2)} г/моль<br>Масові частки:<br>`;
     for (const element in elementCounts) {
         const elementWeight = window.atomicMasses[element] * elementCounts[element];
         const percentage = (elementWeight / totalWeight) * 100;
